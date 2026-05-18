@@ -11,6 +11,6 @@
 -- COMMAND ----------
 
 -- MAGIC %python
--- MAGIC df.write.mode("overwrite").saveAsTable("Workspace.bronze.tb_customer")
+-- MAGIC df.write.format("delta").mode("overwrite").saveAsTable("Workspace.bronze.tb_customer")
 -- MAGIC
 -- MAGIC
